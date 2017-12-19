@@ -1,13 +1,14 @@
-var sys = require('util')
-var fs = require('fs');
-var exec = require('child_process').exec;
-var path = require('path');
-var jsonFile = require('jsonfile');
+const botSettings = require("./botsettings.json");
+const sys = require('util')
+const fs = require('fs');
+const exec = require('child_process').exec;
+const path = require('path');
+const jsonFile = require('jsonfile');
 
-var jsonDIR = '/Discord_Bot/Replay';
+const jsonDIR = botSettings.replayPath;
 
 // Arrays
-var availableReplays = [];
+let availableReplays = [];
 
 
 function getReplays(){
@@ -17,7 +18,7 @@ function getReplays(){
                 availableReplays.push(file);
             }
         });
-    });   
+    });
 }
 
 

@@ -1,11 +1,12 @@
-var sys = require('util')
-var fs = require('fs');
-var exec = require('child_process').exec;
-var path = require('path')
+const sys = require('util')
+const botSettings = require("./botsettings.json");
+const fs = require('fs');
+const exec = require('child_process').exec;
+const path = require('path')
 
 
-var dirname = "/Discord_Bot/Replay";
-var child;
+const dirname = botSettings.replayPath;
+const child;
 
 
 // Read each file in the directory stored in dirname.
@@ -38,4 +39,3 @@ function decodeFile() {
 }
 
 decodeFile();
-
