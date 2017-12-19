@@ -45,7 +45,7 @@ bot.on("message", async message => {
             embed: {
                 color: 3447003,
                 title: "Link to Replay folder",
-                url: "https://www.dropbox.com/sh/iz1ccenw11aqnzp/AAABerEXLdt29UxLKUBXCOhsa?dl=0",
+                url: "dropbox",
                 fields: [{
                         name: "Available Replays:  " + Parse.availReplay.length,
                         value: replayString
