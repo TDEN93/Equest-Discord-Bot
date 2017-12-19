@@ -4,7 +4,7 @@ var exec = require('child_process').exec;
 var path = require('path')
 
 
-var dirname = "/Users/td/Documents/Projects/Discord_Bot/Replay";
+var dirname = "/Discord_Bot/Replay";
 var child;
 
 
