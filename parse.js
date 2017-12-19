@@ -4,7 +4,7 @@ var exec = require('child_process').exec;
 var path = require('path');
 var jsonFile = require('jsonfile');
 
-var jsonDIR = '/Users/td/Documents/Projects/Discord_Bot/Replay';
+var jsonDIR = '/Discord_Bot/Replay';
 
 // Arrays
 var availableReplays = [];
